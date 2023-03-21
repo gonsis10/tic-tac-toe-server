@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js" async></script>
+  </head>
+  <body>
+    <div id="board"></div>
+    <!-- <svg class="winLine">
+      <line id="line" x1="0" y1="0" x2="200" y2="200" />
+    </svg> -->
+    <div id="info">
+      <h2>Game Info</h2>
+      <hr />
+      <p><strong>Game ID: </strong> <span><%- gameID %></span></p>
+      <p><strong>Name: </strong> <span><%- name %></span></p>
+      <p><strong>Opponent: </strong> <span>?</span></p>
+      <p><strong>Player: </strong> <span id="player">?</span></p>
+      <p><strong>Status: </strong> <span id="status">Waiting for opponent</span></p>
+    </div>
+  </body>
+</html>
